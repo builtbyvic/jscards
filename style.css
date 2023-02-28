@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "SF";
+  src: url("/SF-Pro.ttf") format("truetype-variations");
+}
+* {
+  font-family: "SF";
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.card {
+  background-color: #fef9c3;
+  border-radius: 0.5rem;
+  /* flex: 1 1 200px; */
+  padding: 1rem;
+}

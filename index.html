@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="thunder.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>jscards</title>
+</head>
+
+<body>
+  <h1>JS Cards</h1>
+  <div class="cards">
+    <div class="card">
+      <h3>nullish coalescing operator (??)</h3>
+      <ul>
+        <li>treats null and defined similarly</li>
+        <li>we'll say that an expression is 'defined' when it's neither null or undefined</li>
+        <li>if a is defined, a ?? b returns a</li>
+        <li>if a is undefined, a ?? b returns b</li>
+        <li>use case: to provide a default value for a potentially undefined variable</li>
+        <li>a sequence of ?? returns the first 'defined' variable</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>*constructor functions</h3>
+      <ul>
+        <li>you must capitalize the function name</li>
+        <li>must be called with <em>new</em></li>
+        <li>
+          <code>
+            function Print() { <br/>
+              &nbsp;&nbsp;console.log(¹);<br/>
+            }<br/>
+            let printed = new Print();
+          </code>
+        </li>
+        <li>use case: creating multiple objects, implementing reusable object creation code</li>
+        <li>has no return statements</li>
+        <li>write all necessary stuff into <em>this</em> and it automatically becomes the result</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>alert()</h3>
+      <ul>
+        <li>displays a modal window with <strong>OK</strong></li>
+        <li>converts its argument to a string <em>intrinsically</em></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>confirm()</h3>
+      <ul>
+        <li>displays a modal window with <strong>OK</strong> and <strong>Cancel</strong></li>
+        <li>question and two buttons</li>
+        <li>returns true if OK is pressed, otherwise false</li>
+        <li>has no input field</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>function declaration</h3>
+      <ul>
+        <li>
+          <code>
+            function functionName(param) {<br/>
+              &nbsp;&nbsp;// whatever function does<br/>
+            }
+          </code>
+        </li>
+        <li>invoking the function: functionName(argument);</li>
+        <li>can be called before being declared</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>conditional branching</h3>
+      <h4>if</h4>
+      <ul>
+        <li>if (condition) {body?};</li>
+        <li>if...else</li>
+        <li>if...else if...else</li>
+        <li>the condition in the parentheses is converted to <em>Boolean</em> and if it evaluates to <em>true</em>,
+          what's in the body gets executed</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>conditional branching (cntd...)</h3>
+      <h4>ternary operator</h4>
+      <ul>
+        <li>condition ? a : b;</li>
+        <li>if the condition is true, a is returned, otherwise, b is returned</li>
+        <li>practise rewriting if statements into the ternary operator</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>operators (cntd...)</h3>
+      <h4>logical operators</h4>
+      <ul>
+        <li>|| - or operator</li>
+        <li>&& - and operator</li>
+        <li>! - not operator</li>
+      </ul>
+      <h4>strange operators</h4>
+      <h5>unary operators</h5>
+      <ul>
+        <li>+ - converts its operand to a number</li>
+        <li>-</li>
+      </ul>
+      <h5>ternary operator</h5>
+      <ul>
+        <li>condition ? a : b;</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>arrow functions</h3>
+      <ul>
+        <li>(param) => {body;}</li>
+        <li>if no params: () => return y</li>
+        <li>if one param: x => return y</li>
+        <li>you can leave out the return statement</li>
+        <li>arrow functions do not possess their own <em>this</em> keyword</li>
+        <li>arrow functions for clean code</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>type conversions</h3>
+      <h4>converting functions?</h4>
+      <ul>
+        <li>Number()</li>
+        <li>Boolean()</li>
+        <li>String()</li>
+      </ul>
+      <h4>rules</h4>
+      <ul>
+        <li>an empty string converts to 0</li>
+        <li>a non-empty string converts to 1</li>
+        <li>1 converts to true</li>
+        <li>0 converts to false</li>
+        <li>null converts to 0</li>
+        <li>undefined converts to NaN</li>
+        <li>Boolean conversion - empty becomes false</li>
+        <li>"0" and "_" convert to true</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>loops III</h3>
+      <h4>for loops</h4>
+      <ul>
+        <li>
+          <code>
+            for (initialize; condition; increment) {<br/>
+            &nbsp;&nbsp;// loop body<br/>
+            }
+          </code>
+        </li>
+        <li>
+          <code>
+            for (;;) {<br/>
+              &nbsp;&nbsp;// loop body <br/>
+            } (infinite for loop)
+          </code>
+        </li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>prompt()</h3>
+      <ul>
+        <li>displays a modal window</li>
+        <li>prompt("Question",default input)</li>
+        <li>OK and Cancel buttons</li>
+        <li>returns input value when you press OK</li>
+        <li>returns null if you enter an empty string or click Cancel</li>
+        <li>converts its input to a string intrinsically?</li>
+        <li>has an input field</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>data types</h3>
+      <ul>
+        <li>Number</li>
+        <li>String</li>
+        <li>Boolean</li>
+        <li>Symbol</li>
+        <li>BigInt</li>
+        <li>null</li>
+        <li>undefined</li>
+        <li>Object</li>
+      </ul>
+      <h4>rogue data types</h4>
+      <ul>
+        <li>arrays</li>
+        <li>functions</li>
+        <li>set</li>
+        <li>map</li>
+        <li>Date</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>string methods</h3>
+      <ul>
+        <li>indexOf()</li>
+        <li>includes()</li>
+        <li>slice()</li>
+        <li>concat()</li>
+        <li>substr()</li>
+        <li>substring()</li>
+        <li>replace()</li>
+        <li>search()</li>
+        <li>to LowerCase()</li>
+        <li>toUpperCase()</li>
+        <li>toString()*</li>
+        <li>startsWith()</li>
+        <li>repeat()</li>
+        <li>lastIndexOf()</li>
+        <li>charCodeAt()</li>
+        <li>trim()</li>
+        <li>charAt()</li>
+        <li>valueOf()</li>
+        <li>split()</li>
+        <li>match()</li>
+        <li>endsWith()</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>optional chaining (?.)</h3>
+      <ul>
+        <li>safe way to access nested object properties, even if an intermediate property doesn't exist</li>
+        <li>stops the evaluation is the value before ?. is undefined or null and returns undefined, otherwise, it works
+          like normal property access</li>
+        <li>?. makes optional the value before it but not any further</li>
+        <li>the variable before ?. must be declared</li>
+        <li>another example of short-circuiting</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>objects in JS</h3>
+      <ul>
+        <li>object literal - {}</li>
+        <li>constructor - new Object()</li>
+        <li>you can access properties via dot notation, bracket notation or optional chaining?</li>
+        <li>delete object.property returns true if?</li>
+        <li>integers are ordered first, other types are ordered by creation</li>
+        <li>property value shorthand?</li>
+        <li>"property" in object</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>11.04.2021</h3>
+      <ul>
+        <li>with map, set and arrays, we can use .keys(),.values() and .entries() to access keys,values and key,value
+          pairs respectively</li>
+        <li>however, with objects we can do the same but the syntax is slightly different</li>
+        <li>Object.keys(obj), Object.values(obj),Object.entries(obj)</li>
+        <li>the object methods return "real arrays" and not iterables like those of map, set and arrays</li>
+        <li>use to perform powerful transformation of objects</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>loops IV</h3>
+      <ul>
+        <li>for...of -> arrays</li>
+        <li>for...in -> objects</li>
+        <li>.forEach(func) -> arrays</li>
+        <li>NB: the key is to know which loop to use when and how to use which loop</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Map</h3>
+      <ul>
+        <li>new Map() - Constructor</li>
+        <li>map.set(k,v)</li>
+        <li>map.has(k)</li>
+        <li>map.get(k)</li>
+        <li>map.clear()</li>
+        <li>map.size</li>
+        <li>map.delete(k)</li>
+        <li>map.keys()</li>
+        <li>map.values()</li>
+        <li>map.entries()</li>
+        <li>map.forEach(func) = key,value,map?</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Set</h3>
+      <ul>
+        <li>new Set() - Constructor</li>
+        <li>set.add(value)</li>
+        <li>set.has(v)</li>
+        <li>set.clear()</li>
+        <li>set.size</li>
+        <li>set.forEach(func)</li>
+        <li>set.keys()</li>
+        <li>set.values()</li>
+        <li>set.entries()</li>
+        <li>set.delete(v)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>function expression</h3>
+      <ul>
+        <li>
+          <code>
+            let print = function(param) {<br/>
+            &nbsp;&nbsp;console.log(param);<br/>
+            }
+          </code>
+        </li>
+        <li>invoking: print("arg");</li>
+        <li>cannot be called before being declared</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>array methods</h3>
+      <ul>
+        <li>.push(...items)</li>
+        <li>.pop()</li>
+        <li>.unshift(...items)</li>
+        <li>.unshift()</li>
+        <li>.splice(pos,deleteCount,...items)</li>
+        <li>.slice(start,end)</li>
+        <li>.concat(...items)</li>
+        <li>.map(func)</li>
+        <li>.sort(func)</li>
+        <li>.reverse()</li>
+        <li>.indexOf(item)</li>
+        <li>.lastIndexOf(item)</li>
+        <li>.find(func)</li>
+        <li>.findIndex(func)</li>
+        <li>.filter(func)</li>
+        <li>.reduce()</li>
+        <li>.reduceRight()</li>
+        <li>.fill()</li>
+        <li>.forEach(func)</li>
+        <li>.split(delim)</li>
+        <li>.join()</li>
+        <li>.lastIndexOf(item,pos)</li>
+        <li>*Array.isArray(arr)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>11/04/2021</h3>
+      <ul>
+        <li>Object.fromEntries(array)</li>
+        <li>to turn an array back into an object</li>
+        <li>case scenario: when you want to apply array methods to an object</li>
+        <li>first, you will convert an object into an array using the existing object methods i.e. .keys(),.values() and
+          .entries()</li>
+        <li>then you will apply any of the desired array methods</li>
+        <li>once you've applied the desired methods, you will turn the array back into an object using
+          Object.fromEntries(array)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>operators</h3>
+      <h4>basic operators</h4>
+      <ul>
+        <li>binary(+)</li>
+        <li>binary(-)</li>
+        <li>% - modulo</li>
+        <li>/ - division</li>
+        <li>* - multiplication</li>
+      </ul>
+      <h4>comparison operators</h4>
+      <ul>
+        <li>> - greater than</li>
+        <li>
+          < - less than</li>
+        <li>>= - greater than or equal to</li>
+        <li>
+          <= - less than or equal to</li>
+        <li>== - non-strict equality</li>
+        <li>!= - non-strict not equality</li>
+        <li>=== - strict equality</li>
+        <li>!== - strict non-equality</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>conditional branching</h3>
+      <h4>switch case statements</h4>
+      <ul>
+        <li>
+          <code>
+            switch(condition) {<br/>
+            &nbsp;&nbsp;case "rainy":<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;alert("carry umbrella");<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;break;<br/>
+            &nbsp;&nbsp;default:
+            &nbsp;&nbsp;&nbsp;&nbsp;alert("I don't know");<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;break;<br/>
+            }
+          </code>
+        </li>
+        <li>NB: practice with switch statements needed</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>loops II</h3>
+      <h4>do...while loop</h4>
+      <ul>
+        <li>
+          <code>
+            initialize;<br/>
+            do { <br/>
+            &nbsp;&nbsp;statement;<br/>
+            &nbsp;&nbsp;increment;<br/>
+            } while (condition);<br/>
+          </code>
+        </li>
+        <li>NB: the loop body runs at least once even if the condition is false</li>
+        <li>increment prevents us from going into an infinite loop</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>loops</h3>
+      <h4>while loop</h4>
+      <ul>
+        <li>
+          <code>
+            initialize;<br/>
+            while(condition) {<br/>
+            &nbsp;&nbsp;staement;<br/>
+            &nbsp;&nbsp;increment;<br/>
+            }
+          </code>
+        </li>
+        <li>use: for repeating a section of code</li>
+        <li>code in the loop body executes as long as the condition evaluates to true</li>
+        <li>infinite loop: while(true)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Numbers</h3>
+      <ul>
+        <li>number.toFixed(n)</li>
+        <li>parseFloat(number)</li>
+        <li>parseInt(number)</li>
+        <li>isFinite(number)</li>
+        <li>isNaN(number)</li>
+        <li>.toString()</li>
+        <li>.toExponential(n)</li>
+        <li>.toPrecision(n)</li>
+        <li>.valueOf()</li>
+        <li>Number(),parseFloat() and parseInt() are global JavaScript methods</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
